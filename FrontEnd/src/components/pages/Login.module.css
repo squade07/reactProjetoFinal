@@ -1,0 +1,128 @@
+.login {
+    margin: 50px auto;
+    width: 50%;
+    display: flex;
+    border-radius:10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    background-color: var(--cor5);
+}
+
+.container {
+    background-color: var(--cor0);
+}
+
+.container p{
+    text-align: center;
+    font-family: var(--font-destaque);
+    font-size: 2em;
+    color: var(--cor4);
+}
+
+.form {
+    width: 70%;
+    align-self: center;
+}
+
+/*  Título Form  */
+.top_form h1 {
+    font-family: var(--font-destaque);
+    font-weight: normal;
+    font-size: 2em;
+    margin-top: 1em;
+    color: var(--cor4);
+}
+
+.top_form  h1::after {
+    content: '';
+    display: block;
+    width: 1em;
+    height: 0.2em;
+    background-color: var(--cor2);
+    border-radius: 10px;
+}
+
+.form {
+    margin-left: 20px;
+}
+
+.input_group {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 1em 1em 0em;
+}
+
+.input_box {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    margin-left: 0px;
+}
+
+.input_checkbox {
+    display: flex;
+    font-size: 0.9em;
+}
+
+.input_checkbox input {
+    margin-right: 5px;
+}
+
+.input_senha {
+    font-size: 0.9em;
+}
+
+.input_box input {
+    border: none;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.438);
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-top: 10px
+}
+
+.input_box input:hover {
+    box-shadow: 1px 1px 5px var(--cor2);
+}
+
+.botao_continuar button {
+    padding: 8px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--cor2);
+}
+
+.botao_continuar button a {
+    color: var(--cor5);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 960px) {
+    .container {
+        display: none;
+    }
+
+    .login {
+        width: 50%;
+        border-radius: 10px;
+    }
+
+    .input_box {
+        width: 130%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .form h1 {
+        font-size: 1.5em;
+    }
+
+    .input_group {
+        width: 90%;
+        font-size: 0.8em;
+    }
+
+    .botao_continuar button {
+        font-size: 0.7em;
+    }
+}

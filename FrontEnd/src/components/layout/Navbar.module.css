@@ -1,0 +1,10 @@
+.nav {
+    background-color: var(--cor0);
+    font-weight: 800;
+    font-size: 1.1em;
+}
+
+.nav img {
+    width: 70px;
+    margin-right: 10px;
+}

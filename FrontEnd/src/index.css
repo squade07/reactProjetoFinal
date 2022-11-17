@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+  --cor0: #e3f2fd;
+  --cor1: #67ADD4;
+  --cor2: #159A9C;
+  --cor3: #317dc0;
+  --cor4: #002333;
+  --cor5: #fcfcfc;
+  --cor6: #FF7F50;
+
+  --font-destaque: 'Bebas Neue', Helvetica, sans-serif;
+  --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+}
+
+body {
+  font-family: var(--font-padrao);
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 2560px ) {
+  body{
+      zoom: 1.5;
+  }
+}

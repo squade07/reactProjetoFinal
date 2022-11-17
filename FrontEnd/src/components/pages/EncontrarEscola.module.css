@@ -1,0 +1,133 @@
+.escolas {
+    padding: 2rem;
+    display: flex;
+}
+
+.escolas_mapa {
+    border-radius: 10px;
+    margin-right: 20px;
+    width: 50%;
+    border: none;
+    height: 600px;
+}
+
+.escola_sobre {
+    font-weight: 700;
+    margin-right: 20px;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    height: 600px;
+    border: #2b5675 solid 2px;
+    border-radius: 10px;
+    padding: 0.5rem;
+    width: 350px;
+}
+
+.escola_opiniao {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    height: 600px;
+    border: #2b5675 solid 2px;
+    border-radius: 10px;
+    padding: 0.5rem;
+    width: 350px;
+}
+
+.escola_titulo {
+    font-weight: 700;
+    color: #2b5675;
+    font-size: 1.5rem;
+    border: #2b5675 solid 2px;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+.escola_subtitulo {
+    font-size: 1rem;
+    color: #2b5675;
+    margin-top: 0.5rem;
+    font-weight: 700;
+}
+
+.escola_input_area {
+    border: none;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    resize: none;
+}
+
+.escola_input {
+    border: none;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.438);
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+}
+
+@media screen and (max-width: 1000px) {
+    .escolas {
+        flex-direction: column;
+    }
+
+    .escolas_mapa {
+        width: 80%;
+        height: 300px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .container {
+        margin: auto;
+    }
+
+    .escola_opiniao {
+        font-size: 1.2rem;
+        margin-left: 0rem;
+        height: auto;
+        width: 250px;
+    }
+    .escola_sobre{
+        height: auto;
+        margin-left: 0rem;
+        width: 250px;
+    }
+
+    .escola_titulo{
+        font-size: 1.3rem;
+    }
+
+    .escola_sobre {
+        font-size: 1.2rem;
+    }
+
+    .escola_subtitulo {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 495px) {
+    .escolas_mapa {
+        width: 100%;
+    }
+    .escola_opiniao {
+        margin-left: 0rem;
+        height: auto;
+        width: 250px;
+    }
+    .escola_sobre{
+        height: auto;
+        margin-left: 0rem;
+        width: 250px;
+    }
+
+    .container {
+        padding: 10px;
+        flex-direction: column;
+        overflow-y: scroll;
+        max-width: 20em;
+        max-height: 20em;
+    }
+}

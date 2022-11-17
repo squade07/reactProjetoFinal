@@ -1,0 +1,185 @@
+.cadastro {
+    width: 80%;
+    display: flex;
+    margin: 50px auto;
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Login */
+.form {
+    margin-left: 20px;
+}
+
+.login {
+    width: 60%;
+    margin: 50px auto;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    background-color: var(--cor5);
+}
+
+.login input[type="email"] {
+    width: 320%;
+}
+
+.login input[type="password"] {
+    width: 320%;
+}
+
+.container {
+    background-color: var(--cor0);
+    width: 70%;
+    padding: 20px;
+}
+
+.container>p {
+    text-align: center;
+    font-family: var(--font-destaque);
+    font-size: 2em;
+    color: var(--cor4);
+}
+
+.input_checkbox {
+    font-size: 0.9em;
+}
+
+.input_checkbox input {
+    margin-right: 5px;
+}
+
+.input_senha {
+    font-size: 0.9em;
+}
+
+.input_senha a {
+    text-decoration: none;
+}
+
+/*  Título Form  */
+.top_form>h1 {
+    font-family: var(--font-destaque);
+    font-size: 2em;
+    margin-top: 1em;
+    color: var(--cor4);
+}
+
+.top_form>h1::after {
+    content: '';
+    display: block;
+    width: 2em;
+    height: 0.2em;
+    background-color: var(--cor2);
+    border-radius: 10px;
+}
+
+.imagem {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    background-color: var(--cor0);
+}
+
+/*  Campo de Dados*/
+.input_group {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em 1em 1em 0em;
+}
+
+.input_box {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    margin-left: 0px;
+}
+
+.input_box input {
+    border: none;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.438);
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-top: 10px
+}
+
+.input_box input:hover {
+    box-shadow: 1px 1px 5px var(--cor2);
+}
+
+/*  Gênero  */
+.genero_group {
+    display: flex;
+    margin: 10px 0px;
+}
+
+.input_genero {
+    margin-right: 10px;
+}
+
+.input_genero input {
+    margin-right: 5px;
+}
+
+/*  Botão  */
+.botao_continuar button {
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--cor2);
+}
+
+.botao_continuar button a {
+    color: var(--cor5);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 1110px) {
+
+    .cadastro {
+        width: 80%;
+    }
+
+    .input_box {
+        width: 150%;
+    }
+
+    .genero_group {
+        flex-direction: column;
+    }
+
+    .input_genero {
+        padding-top: 5px;
+    }
+
+}
+
+@media screen and (max-width: 930px) {
+    .imagem img {
+        display: none;
+    }
+
+    .input_group {
+        overflow-y: scroll;
+        height: 20em;
+        padding: 0px 10px;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+    .input_group {
+        max-width: 200px;
+    }
+
+    .input_box {
+        max-width: 90%;
+        font-size: 0.7em;
+    }
+}
